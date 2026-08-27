@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18139944358"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18139944358');
+    </script>
+    <!-- Event snippet for Visualização de página conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18139944358/JXixCJT55KkcEKar5slD',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Plena | Odontologia, Dermatologia e Estética em Goiânia</title>
+    <meta name="description" content="Instituto Plena - Referência em Odontologia, Dermatologia e Estética em Goiânia. Dra. Lilyan Silvério e Dra. Isabela Silvério. Agende sua consulta.">
+    <link rel="icon" href="https://plenaodontologiaesaude.com.br/wp-content/themes/PlenaThemeComplete/images/favicon.ico">
+    <meta property="og:title" content="Instituto Plena | Odontologia, Dermatologia e Estética"/>
+    <meta property="og:image" content="https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/Fotofachada1.jpg"/>
+    <meta property="og:description" content="Referência em atendimento humanizado em Goiânia. Odontologia, Dermatologia e Estética."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --teal-dark: #2E0C1E;
+            --teal: #45132A;
+            --teal-light: #6B2040;
+            --gold: #D6C6B6;
+            --gold-light: #E3D5C8;
+            --cream: #faf6f2;
+            --white: #ffffff;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-500: #6c757d;
+            --gray-700: #444;
+            --gray-900: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-900);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== UTILITY ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: #fff;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebe5c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .btn-whatsapp-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: #25D366;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #25D366;
+        }
+
+        .btn-whatsapp-outline:hover {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .btn-whatsapp-outline:hover svg {
+            fill: #fff;
+        }
+
+        .btn-whatsapp-outline svg {
+            width: 20px;
+            height: 20px;
+            fill: #25D366;
+            transition: fill 0.3s ease;
+        }
+
+        .section-label {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--teal-dark);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--gray-500);
+            max-width: 600px;
+        }
+
+        /* WhatsApp icon SVG reusable */
+        .wa-icon {
+            display: inline-block;
+        }
+
+        /* ===== HEADER / NAV ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s;
+        }
+
+        .header.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--teal-dark);
+        }
+
+        .logo-text span {
+            color: var(--gold);
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .header-cta:hover {
+            background: #1ebe5c;
+        }
+
+        .header-cta svg {
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, rgba(46,12,30,0.88) 0%, rgba(69,19,42,0.85) 50%, rgba(107,32,64,0.82) 100%), url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/IMG_58871.jpg') center/cover no-repeat;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(214,198,182,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -15%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 650px;
+        }
+
+        .hero h1 em {
+            color: var(--gold-light);
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+            opacity: 0.9;
+            max-width: 520px;
+            margin-bottom: 36px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .hero-trust {
+            margin-top: 50px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-trust-item {
+            text-align: center;
+        }
+
+        .hero-trust-item .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--gold-light);
+        }
+
+        .hero-trust-item .label {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+
+        /* ===== DIFFERENTIALS BAR ===== */
+        .diff-bar {
+            background: var(--cream);
+            padding: 40px 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .diff-item {
+            padding: 10px;
+        }
+
+        .diff-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--teal), var(--teal-light));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 14px;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .diff-item h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--teal-dark);
+            margin-bottom: 4px;
+        }
+
+        .diff-item p {
+            font-size: 13px;
+            color: var(--gray-500);
+        }
+
+        /* ===== ABOUT ===== */
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 20px;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: url('fotos/dra-lilyan-about.jpg') center/cover no-repeat;
+        }
+
+        .about-content .section-title {
+            font-size: 32px;
+        }
+
+        .about-content p {
+            color: var(--gray-700);
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        .about-highlight {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--gray-700);
+        }
+
+        .about-highlight .check {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            background: var(--teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            padding: 80px 0;
+            background: var(--cream);
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .services-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--gold), var(--teal));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            width: 100%;
+            height: 180px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--teal-dark);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--gray-500);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .service-tag {
+            background: rgba(69,19,42,0.08);
+            color: var(--teal);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .service-card .btn-whatsapp-outline {
+            font-size: 13px;
+            padding: 10px 22px;
+        }
+
+        /* ===== DOCTORS ===== */
+        .doctors {
+            padding: 80px 0;
+        }
+
+        .doctors-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .doctors-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .doctor-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--gray-200);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .doctor-photo {
+            height: 260px;
+            background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .doctor-info {
+            padding: 28px;
+        }
+
+        .doctor-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: var(--teal-dark);
+            margin-bottom: 4px;
+        }
+
+        .doctor-info .specialty {
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .doctor-info p {
+            font-size: 14px;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            padding: 70px 0;
+            background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/IMG_5887.jpg') center/cover no-repeat;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(214,198,182,0.12) 0%, transparent 60%);
+            border-radius: 50%;
+        }
+
+        .cta-banner .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-banner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .cta-banner p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 80px 0;
+            background: var(--cream);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid var(--gray-200);
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 16px;
+            margin-bottom: 14px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-card p {
+            font-size: 14px;
+            color: var(--gray-700);
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--teal-dark);
+        }
+
+        .testimonial-author span {
+            font-weight: 400;
+            color: var(--gray-500);
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .faq-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--teal-dark);
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 22px;
+            color: var(--gold);
+            font-weight: 300;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer p {
+            padding-bottom: 20px;
+            font-size: 14px;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* ===== LOCATION ===== */
+        .location {
+            padding: 80px 0;
+            background: var(--gray-100);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--teal-dark);
+            margin-bottom: 20px;
+        }
+
+        .location-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .location-detail .icon {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            background: rgba(69,19,42,0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .location-detail p {
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .location-detail strong {
+            color: var(--teal-dark);
+        }
+
+        .location-map {
+            border-radius: 16px;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 16px;
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2024/11/Fotofachada1-38.jpg') center/cover no-repeat;
+            text-align: center;
+            color: #fff;
+        }
+
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            margin-bottom: 14px;
+        }
+
+        .final-cta p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 36px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--teal-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 0 24px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .footer p {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .footer-social a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: var(--gold);
+        }
+
+        .footer-copy {
+            font-size: 11px;
+            opacity: 0.5;
+            margin-top: 16px;
+        }
+
+        /* ===== FLOATING WHATSAPP ===== */
+        .floating-wa {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+        }
+
+        .floating-wa svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6); }
+            100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero { padding: 120px 0 60px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 15px; }
+            .hero-trust { gap: 24px; }
+            .hero-trust-item .number { font-size: 26px; }
+
+            .diff-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+            .about-grid,
+            .doctors-grid,
+            .location-grid { grid-template-columns: 1fr; }
+
+            .about-image { height: 280px; }
+
+            .services-grid { grid-template-columns: 1fr; }
+
+            .testimonials-grid { grid-template-columns: 1fr; }
+
+            .section-title { font-size: 28px; }
+            .cta-banner h2 { font-size: 28px; }
+            .final-cta h2 { font-size: 30px; }
+
+            .hero-ctas { flex-direction: column; align-items: flex-start; }
+        }
+
+        @media (max-width: 480px) {
+            .diff-grid { grid-template-columns: 1fr; }
+            .about-highlights { grid-template-columns: 1fr; }
+            .header-cta span { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo-text" style="display:flex;align-items:center;gap:8px;">
+                <img src="logo-plena.jpg" alt="Instituto Plena" style="height:50px;width:auto;border-radius:8px;">
+                <span style="font-family:'Playfair Display',serif;font-size:18px;color:#2E0C1E;">Instituto <span style="color:#D6C6B6;">Plena</span></span>
+            </div>
+            <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="header-cta" aria-label="Agendar pelo WhatsApp">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Agendar Consulta</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">Setor Bueno, Goiânia</div>
+            <h1>Sua saúde e beleza em um só lugar: <em>do sorriso à pele</em></h1>
+            <p>O Instituto Plena integra Odontologia, Dermatologia e Estética com 35 anos de experiência e formação internacional. Atendimento humanizado e resultados naturais.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agende Sua Avaliação
+                </a>
+                <a href="#servicos" style="color: rgba(255,255,255,0.9); text-decoration: none; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.4); padding-bottom: 2px;">Conheça nossos serviços &darr;</a>
+            </div>
+            <div class="hero-trust">
+                <div class="hero-trust-item">
+                    <div class="number">35+</div>
+                    <div class="label">Anos de Experiência</div>
+                </div>
+                <div class="hero-trust-item">
+                    <div class="number">15+</div>
+                    <div class="label">Anos de Clínica</div>
+                </div>
+                <div class="hero-trust-item">
+                    <div class="number">2</div>
+                    <div class="label">Especialistas Renomadas</div>
+                </div>
+                <div class="hero-trust-item">
+                    <div class="number">3</div>
+                    <div class="label">Especialidades Integradas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENTIALS BAR -->
+    <section class="diff-bar">
+        <div class="container">
+            <div class="diff-grid">
+                <div class="diff-item">
+                    <div class="diff-icon">&#9734;</div>
+                    <h4>Sinergia Multidisciplinar</h4>
+                    <p>Odonto + Dermato integrados em um só lugar</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">&#9883;</div>
+                    <h4>Autoridade Geracional</h4>
+                    <p>Mãe e filha unindo tradição e inovação</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">&#9825;</div>
+                    <h4>Cuidado Humanizado</h4>
+                    <p>Escuta ativa e atendimento personalizado</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">&#9878;</div>
+                    <h4>Base Científica</h4>
+                    <p>Formação internacional e atualizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image"></div>
+                <div class="about-content">
+                    <div class="section-label">Sobre o Instituto</div>
+                    <h2 class="section-title">Tradição em cuidar,<br>excelência em cada detalhe</h2>
+                    <p>O Instituto Plena é o resultado de 15 anos de dedicação ao empreendedorismo feminino e ao cuidado humanizado em Goiânia. Sob a liderança da Dra. Lilyan Silvério, cirurgia-dentista com 35 anos de experiência, a clínica consolidou-se como referência em reabilitação oral e estética do sorriso.</p>
+                    <p>Com a chegada da Dra. Isabela Silvério, médica dermatologista com residência médica e estágio na USP-SP, Hospital La Princesa (Madrid) e Instituto Azulay (RJ), mãe e filha unem tradição e inovação para oferecer cuidado completo.</p>
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <div class="check">&#10003;</div>
+                            <span>Especialistas em Implantes e Periodontia</span>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="check">&#10003;</div>
+                            <span>Dermatologia Clínica e Estética</span>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="check">&#10003;</div>
+                            <span>Estágio Internacional (USP-SP + Madrid)</span>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="check">&#10003;</div>
+                            <span>Atendimento Personalizado</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp" style="margin-top: 10px;">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Fale Conosco no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="services-header">
+                <div class="section-label">Nossos Serviços</div>
+                <h2 class="section-title">Cuidado completo para a<br>sua melhor versão</h2>
+                <p class="section-subtitle">Do sorriso à pele, oferecemos tratamentos integrados com base científica e resultados naturais.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon" style="background-image: url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/IMG_5837.jpg');"></div>
+                    <h3>Implantes Dentários</h3>
+                    <p>Reabilitação oral completa com tecnologia avançada e planejamento individualizado. Mais de 35 anos de experiência da Dra. Lilyan em implantodontia.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Implante Unitário</span>
+                        <span class="service-tag">Carga Imediata</span>
+                        <span class="service-tag">Prótese sobre Implante</span>
+                        <span class="service-tag">Reabilitação Total</span>
+                    </div>
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp-outline">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Saiba Mais
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon" style="background-image: url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/IMG_5802.jpg');"></div>
+                    <h3>Estética do Sorriso</h3>
+                    <p>Transforme seu sorriso com lentes de contato dental, facetas de porcelana e clareamento profissional. Resultados naturais e elegantes.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Lentes de Contato</span>
+                        <span class="service-tag">Facetas de Porcelana</span>
+                        <span class="service-tag">Clareamento</span>
+                        <span class="service-tag">Design do Sorriso</span>
+                    </div>
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp-outline">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Saiba Mais
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon" style="background-image: url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/laser-051.jpg');"></div>
+                    <h3>Dermatologia</h3>
+                    <p>Cuidado completo da pele com a Dra. Isabela Silvério, com residência médica e estágio na USP-SP, Hospital La Princesa (Madrid) e Instituto Azulay (RJ). Ciência da pele avançada.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Acne e Manchas</span>
+                        <span class="service-tag">Saúde da Pele</span>
+                        <span class="service-tag">Dermatologia Clínica</span>
+                        <span class="service-tag">Prevenção</span>
+                    </div>
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp-outline">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Saiba Mais
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon" style="background-image: url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/BIOESTIMULADORES-INDICACAO-scaled-1.jpeg');"></div>
+                    <h3>Estética Facial</h3>
+                    <p>Harmonização facial com naturalidade e segurança médica. Toxina botulínica, preenchimento e bioestimuladores de colágeno com resultados elegantes.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Toxina Botulínica</span>
+                        <span class="service-tag">Preenchimento</span>
+                        <span class="service-tag">Bioestimuladores</span>
+                        <span class="service-tag">Skinbooster</span>
+                    </div>
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp-outline">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER 1 -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Agende sua avaliação com nossas especialistas</h2>
+            <p>Atendimento humanizado e personalizado no Setor Bueno, Goiânia. Fale conosco pelo WhatsApp.</p>
+            <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp" style="font-size: 18px; padding: 18px 42px;">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Quero Agendar Minha Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="doctors" id="equipe">
+        <div class="container">
+            <div class="doctors-header">
+                <div class="section-label">Nossa Equipe</div>
+                <h2 class="section-title">Especialistas que cuidam<br>da sua saúde e beleza</h2>
+                <p class="section-subtitle">Tradição e inovação unidas em uma equipe de excelência.</p>
+            </div>
+
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-photo" style="background-image: url('https://plenaodontologiaesaude.com.br/wp-content/uploads/2022/06/WhatsAppImage2022-03-23at07.44.511.jpeg');"></div>
+                    <div class="doctor-info">
+                        <h3>Dra. Lilyan Silvério</h3>
+                        <div class="specialty">Cirurgia-Dentista | Implantes e Periodontia</div>
+                        <p>Com 35 anos de experiência, é especialista em Implantes e Periodontia. Líder do Instituto Plena há 15 anos, é referência em reabilitação oral e estética do sorriso em Goiânia.</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-photo" style="background-image: url('fotos/dermato-5.jpg');"></div>
+                    <div class="doctor-info">
+                        <h3>Dra. Isabela Silvério</h3>
+                        <div class="specialty">Médica Dermatologista | Residência Médica + Estágio USP-SP e Madrid</div>
+                        <p>Dermatologista com residência médica e estágio na USP-SP, Hospital La Princesa (Madrid) e Instituto Azulay (RJ). Traz inovação e ciência avançada para o cuidado da pele.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="testimonials-header">
+                <div class="section-label">Depoimentos</div>
+                <h2 class="section-title">O que nossos pacientes dizem</h2>
+                <p class="section-subtitle">Experiências reais de quem confia no Instituto Plena.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Fiz meu implante com a Dra. Lilyan e fiquei impressionada com o cuidado e a atenção em cada etapa. O resultado ficou natural e eu voltei a sorrir com confiança."</p>
+                    <div class="testimonial-author">Maria C. <span>&mdash; Implante Dentário</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"A Dra. Isabela é incrível! Minha pele nunca esteve tão bonita. O tratamento foi todo personalizado e ela explicou cada detalhe. Super recomendo."</p>
+                    <div class="testimonial-author">Ana P. <span>&mdash; Dermatologia</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Fiz lentes de contato dental e a toxina botulínica no mesmo lugar. A integração entre as especialidades fez toda a diferença no resultado. Me sinto renovada!"</p>
+                    <div class="testimonial-author">Fernanda S. <span>&mdash; Estética Integrada</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <div class="section-label">Dúvidas Frequentes</div>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas principais dúvidas sobre nossos serviços.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <button class="faq-question">Quais especialidades o Instituto Plena oferece?</button>
+                    <div class="faq-answer">
+                        <p>O Instituto Plena oferece Odontologia (implantes, estética do sorriso, reabilitação oral), Dermatologia Clínica e Estética, e procedimentos de Estética Facial (toxina botulínica, preenchimento, bioestimuladores), tudo integrado em um só lugar.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como funciona o atendimento integrado odonto + dermato?</button>
+                    <div class="faq-answer">
+                        <p>Nosso diferencial é o planejamento conjunto entre as especialidades. Se você deseja harmonização facial, por exemplo, integramos o design do sorriso com os procedimentos dermatológicos para um resultado completo e harmonioso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Qual a formação das profissionais?</button>
+                    <div class="faq-answer">
+                        <p>A Dra. Lilyan Silvério tem 35 anos de experiência, especialista em Implantes e Periodontia. A Dra. Isabela Silvério é dermatologista com residência médica e estágio na USP-SP, Hospital La Princesa (Madrid) e Instituto Azulay (RJ).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Onde fica o Instituto Plena?</button>
+                    <div class="faq-answer">
+                        <p>Estamos localizados no Setor Bueno, em Goiânia - GO. Uma região de fácil acesso com estacionamento próximo. Entre em contato pelo WhatsApp para o endereço completo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como agendo minha consulta?</button>
+                    <div class="faq-answer">
+                        <p>Você pode agendar diretamente pelo nosso WhatsApp clicando em qualquer botão verde desta página. Nossa equipe responderá rapidamente para encontrar o melhor horário para você.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location" id="localizacao">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="section-label">Localização</div>
+                    <h3>Venha nos visitar</h3>
+
+                    <div class="location-detail">
+                        <div class="icon">&#128205;</div>
+                        <div>
+                            <p><strong>Endereço</strong></p>
+                            <p>Rua T-62, n 1193, Setor Bueno, Goiânia-GO<br>CEP: 74223-180</p>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <div class="icon">&#128222;</div>
+                        <div>
+                            <p><strong>WhatsApp</strong></p>
+                            <p>(62) 99933-0075</p>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <div class="icon">&#128336;</div>
+                        <div>
+                            <p><strong>Horário de Atendimento</strong></p>
+                            <p>Seg a Sex: 7h às 20h<br>Sábado: 8h às 14h</p>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <div class="icon">&#127748;</div>
+                        <div>
+                            <p><strong>Redes Sociais</strong></p>
+                            <p>@plenaodontologiaesaude</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp" style="margin-top: 20px;">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Falar pelo WhatsApp
+                    </a>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.284915305733!2d-49.27238418553763!3d-16.712629850658935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef126c39dcc9d%3A0x7934da107a83dbaa!2sPlena%20Odontologia%2C%20Sa%C3%BAde%20e%20Est%C3%A9tica!5e0!3m2!1spt-BR!2sus!4v1647568302372!5m2!1spt-BR!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="section-label" style="color: var(--gold-light);">Comece Agora</div>
+            <h2>Pronta para se sentir plena?</h2>
+            <p>Do sorriso à pele, cuidamos de você com excelência, ciência e acolhimento. Agende sua avaliação agora mesmo.</p>
+            <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="btn-whatsapp" style="font-size: 18px; padding: 18px 42px;">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Agendar Minha Avaliação Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo" style="display:flex;align-items:center;justify-content:center;gap:10px;">
+                <img src="logo-plena.jpg" alt="Instituto Plena" style="height:40px;width:auto;border-radius:6px;">
+                <span>Instituto <span>Plena</span></span>
+            </div>
+            <p>Odontologia | Dermatologia | Estética</p>
+            <p>Setor Bueno, Goiânia - GO | (62) 99933-0075</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/plenaodontologiaesaude" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/plenaodontologiaesaude" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 Instituto Plena. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/5562999330075?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Plena%20Odontologia" class="floating-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var item = this.parentElement;
+                var isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('active'); });
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        // Google Ads conversion tracking on all WhatsApp links
+        document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var url = this.href;
+                gtag_report_conversion(url);
+                setTimeout(function() { window.open(url, '_blank'); }, 300);
+            });
+        });
+    </script>
+
+</body>
+</html>
